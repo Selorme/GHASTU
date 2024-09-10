@@ -1,0 +1,94 @@
+.gradient-background {
+    background: linear-gradient(300deg, green, gold, red);
+    background-size: contain;
+    animation: gradient-animation 18s ease infinite;
+    position: relative;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.responsive-video {
+    width: 100%; /* Fill the width of the container */
+    height: auto; /* Maintain aspect ratio */
+    
+}
+
+.lead {
+    text-align: center;
+}
+
+.display-5 {
+    text-align: center;
+}
+
+/* Reset margin for the row */
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Adjust padding if necessary */
+.row .col-10, .row .col-sm-8, .row .col-lg-6 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.pb-2 {
+    text-align: center;
+}
+
+.gradient-background::before {
+    content: "GHASTU"; /* Your watermark text */
+    position: absolute;
+    top: 10%; /* Adjust position */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    font-size: 10vw; /* Responsive font size relative to viewport width */
+    max-width: 100%; /* Prevent overflow */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Ensure no overflow */
+    color: rgba(255, 255, 255, 0.15); /* Light color and opacity for watermark effect */
+    z-index: 1; /* Behind other content */
+    pointer-events: none; /* Prevent interaction */
+}
+
+.invite-text {
+    text-align: center;
+    font-size: 50px;
+}
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.us {
+    background-color: snow;
+}
+
+.join {
+    background-color: snow;
+}
+
+.contact {
+    background-color: snow;
+}
+
+.icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
