@@ -118,3 +118,7 @@
     opacity: 100;
     transition: opacity 0.3s;
 }
+
+.caption {
+    text-align: center;
+}
