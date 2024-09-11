@@ -92,3 +92,29 @@
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
 }
+
+.about {
+    text-align: center;
+}
+
+.announcements {
+    text-align: center;
+}
+
+/* Example CSS */
+.is-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.is-visible {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.navbar {
+    opacity: 100;
+    transition: opacity 0.3s;
+}
