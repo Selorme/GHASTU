@@ -79,7 +79,9 @@
   <!-- carousel -->
   <section class="join">
     <div class="container pb-5">
-      <h2 class="invite-text">Join us</h2>
+      <a href="{{ url_for('contact') }}" class="text-decoration-none">
+        <h2 class="invite-text">Join us</h2>
+      </a>
       <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -113,22 +115,6 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Us -->
-  <section class="contact">
-    <div class="container">  
-      <div class="d-flex justify-content-center">
-        <button class="btn btn-primary btn-lg px-4 rounded-pill" type="button">
-          Contact Us
-        </button>
-      </div>
-      <div class="d-flex gap-2 justify-content-center py-5">
-        <button class="btn btn-info rounded-pill px-3" type="button">Email</button>
-        <button class="btn btn-info rounded-pill px-3" type="button">WhatsApp</button>
-        <button class="btn btn-info rounded-pill px-3" type="button">Form</button>
       </div>
     </div>
   </section>
