@@ -130,3 +130,13 @@
 body {
     background-color: snow;
 }
+
+.custom-link {
+    text-decoration: underline;
+    color: black;
+}
+
+.custom-link:hover {
+    text-decoration: underline; /* Keeps the underline on hover */
+    color: black; /* Ensures the color stays black on hover */
+}
