@@ -31,10 +31,17 @@
     text-align: center;
 }
 
-/* Reset margin for the row */
 .row {
     margin-left: 0;
     margin-right: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text inside columns */
+}
+
+.col-10, .col-sm-8, .col-lg-6 {
+    margin: 0;
 }
 
 /* Adjust padding if necessary */
@@ -65,6 +72,7 @@
 .invite-text {
     text-align: center;
 }
+
 .carousel-item img {
     max-width: 100%;
     height: auto;
@@ -128,6 +136,9 @@
 
 body {
     background-color: snow;
+    margin: 0;
+    padding: 0;
+    height: auto;
 }
 
 .custom-link {
@@ -137,5 +148,73 @@ body {
 
 .custom-link:hover {
     text-decoration: underline; /* Keeps the underline on hover */
-    color: black; /* Ensures the color stays black on hover */
+    color: blue; /* Ensures the color stays black on hover */
+}
+
+/* Ensures navbar links are black by default */
+.navbar .nav-link {
+    color: black !important; /* Override Bootstrap's default styles */
+}
+
+/* Ensures navbar links turn red on hover */
+.navbar .nav-link:hover {
+    color: blue !important; /* Override Bootstrap's default styles */
+}
+
+.navbar .d-flex {
+    margin-left: auto; /* Pushes the form to the right side */
+}
+
+.navbar .form-control {
+    margin-right: 1rem; /* Adds space between the input and button */
+}
+
+.navbar-brand {
+    color: black !important; /* Ensures the text color is black */
+    background: linear-gradient(300deg, green, gold, red);
+    background-size: contain;
+    animation: gradient-animation 18s ease infinite;
+    position: relative;
+    border-radius: 10px; /* Adjust the radius as needed */
+    padding: 5px 15px; /* Optional: add padding for better appearance */
+}
+
+.gradient-background-footer {
+    background: linear-gradient(300deg, green, gold, red);
+    background-size: contain;
+    animation: gradient-animation 18s ease infinite;
+    position: relative;
+}
+
+.gradient-background-footer::before {
+    content: "GHASTU"; /* Your watermark text */
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Ensure text is centered */
+    font-size: 5vw; /* Responsive font size relative to viewport width */
+    max-width: 100%; /* Prevent overflow */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Ensure no overflow */
+    color: rgba(255, 255, 255, 0.15); /* Light color and opacity for watermark effect */
+    z-index: 1; /* Behind other content */
+    pointer-events: none; /* Prevent interaction */
+}
+
+.container {
+    margin-bottom: 5px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  flex: 1;
 }
