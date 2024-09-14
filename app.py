@@ -1,11 +1,11 @@
 import flask_bootstrap
 from flask import Flask, render_template, url_for, request
 import smtplib
-from flask_bootstrap import Bootstrap5
+from flask_bootstrap import Bootstrap4
 
 app = Flask(__name__)
 
-bootstrap = Bootstrap5(app)
+bootstrap = Bootstrap4(app)
 
 
 @app.route("/")
