@@ -4,7 +4,7 @@
   <!-- Introduction Hero -->
   <section class="gradient-background pt-4" id="content">
     <div class="container col-xxl-8 px-4 py-5"></div>
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5 mx-5">
         <div class="col-10 col-sm-8 col-lg-6 mx-auto">
           <video class="responsive-video d-block mx-auto" controls autoplay muted>
             <div class="overlay-text">
@@ -23,33 +23,40 @@
 
   <!-- Who are we? -->
   <section class="us">
-    <div class="container px-4 py-5" id="featured-3">
+    <div class="container px-4 pt-5" id="featured-3">
       <h2 class="pb-2 border-bottom">Who Are We?</h2>
-      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-        <div class="feature col">
-          <div class="d-flex align-items-center mb-3">
-            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-              <img src="/static/img/bullseye.svg" height="30" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+      <div class="row g-4 py-5 grid-layout">
+        <div class="left-column">
+          <!-- Mission -->
+          <div class="feature">
+            <div class="d-flex align-items-center mb-3 justify-content-center">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="/static/img/bullseye.svg" height="30" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+              </div>
+              <h3 class="fs-2 text-body-emphasis mb-0 text-center">Our Mission</h3>
             </div>
-            <h3 class="fs-2 text-body-emphasis mb-0">Our Mission</h3>
+            <p class="text-center">Our mission is to unite, support, and empower Ghanaian students in İstanbul by fostering a strong sense of community, promoting academic excellence, and facilitating cultural exchange. We aim to provide a platform that encourages personal and professional growth, while also representing the interests and needs of our members in the larger İstanbul community.</p>
           </div>
-          <p>Our mission is to unite, support, and empower Ghanaian students in İstanbul by fostering a strong sense of community, promoting academic excellence, and facilitating cultural exchange. We aim to provide a platform that encourages personal and professional growth, while also representing the interests and needs of our members in the larger İstanbul community.</p>
-        </div>
-        <div class="feature col">
-          <div class="d-flex align-items-center mb-3">
-            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-              <img src="/static/img/lightbulb.svg" height="30" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+
+          <!-- Vision -->
+          <div class="feature">
+            <div class="d-flex align-items-center mb-3 justify-content-center">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="/static/img/lightbulb.svg" height="30" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+              </div>
+              <h3 class="fs-2 text-body-emphasis mb-0 text-center">Our Vision</h3>
             </div>
-            <h3 class="fs-2 text-body-emphasis mb-0">Our Vision</h3>
+            <p class="text-center">Our vision is to create a vibrant and cohesive Ghanaian student community in İstanbul that thrives on mutual support, cultural pride, and academic success. We aspire to be a leading student association that not only nurtures the development of its members but also contributes positively to the diversity and cultural richness of Türkiye.</p>
           </div>
-          <p>Our vision is to create a vibrant and cohesive Ghanaian student community in İstanbul that thrives on mutual support, cultural pride, and academic success. We aspire to be a leading student association that not only nurtures the development of its members but also contributes positively to the diversity and cultural richness of Türkiye.</p>
         </div>
-        <div class="feature col">
-          <div class="d-flex align-items-center mb-3">
+
+        <!-- Values -->
+        <div class="right-column feature">
+          <div class="d-flex align-items-center mb-3 justify-content-center">
             <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
               <img src="/static/img/gem.svg" height="30" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
             </div>
-            <h3 class="fs-2 text-body-emphasis mb-0">Our Values</h3>
+            <h3 class="fs-2 text-body-emphasis mb-0 text-center">Our Values</h3>
           </div>
           <ul>
             <li>We believe in the strength of a united community, supporting each other both academically and personally.</li>
@@ -64,11 +71,13 @@
   </section>
 
   <!-- carousel -->
-  <section class="join">
+  <section>
     <div class="container pb-5">
-      <a href="{{ url_for('contact') }}" class="custom-link">
-        <h2 class="invite-text">Join us</h2>
-      </a>
+      <div class="button-wrapper">
+        <a href="{{ url_for('contact') }}" class="custom-link">
+          <h2 class="btn btn-primary text-capitalized mb-3" id="invite-text">Join us</h2>
+        </a>
+      </div>
       <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>

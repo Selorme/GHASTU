@@ -1,11 +1,11 @@
 import flask_bootstrap
 from flask import Flask, render_template, url_for, request
 import smtplib
-from flask_bootstrap import Bootstrap
+from flask_bootstrap import Bootstrap5
 
 app = Flask(__name__)
 
-bootstrap = Bootstrap(app)
+bootstrap = Bootstrap5(app)
 
 
 @app.route("/")
@@ -71,6 +71,21 @@ def contact():
                                 msg=f"Subject: New Message From Your Website!\n\nName: {name}\nEmail address: {email}\nPhone number: {phone}\nMessage: {messages}")
         return render_template("contact.html", message_sent=True)
     return render_template("contact.html", message_sent=False)
+
+
+@app.route("/meetings")
+def meetings():
+    return render_template("meetings.html")
+
+
+@app.route("/iftar")
+def iftar():
+    return render_template("iftar.html")
+
+
+@app.route("/graduation")
+def graduation():
+    return render_template("graduation.html")
 
 
 if __name__ == "__main__":
