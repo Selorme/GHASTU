@@ -2,23 +2,28 @@
 {% block title %}About Us{% endblock %}
 {% block content %}
     <!--contact section-->
+<!--contact section-->
     <section class="container" id="content">
         <div class="about justify-content-center">
             <h1>Get in Touch with Us</h1>
             <div class="container">
                 <div class="d-flex justify-content-center">
-                    <div class="d-flex gap-2 justify-content-center py-5">
+                    <!-- Add a custom wrapper div -->
+                    <div class="button-wrapper d-flex flex-column gap-3 justify-content-center py-5">
                         <!-- Email Button -->
-                        <button class="btn btn-primary text-capitalized w-100" type="button" data-bs-toggle="modal" data-bs-target="#emailModal">Email</button>
+                        <p class="container justify-content-center">To send us a message, you can use the Email button or fill the form below</p>
+                        <button class="btn btn-primary text-capitalized" type="button" data-bs-toggle="modal" data-bs-target="#emailModal">Email</button>
                         <!-- WhatsApp Button -->
-                        <button class="btn btn-primary text-capitalized w-100" type="button" data-bs-toggle="modal" data-bs-target="#whatsappModal">WhatsApp</button>
+                        <!-- <button class="btn btn-primary text-capitalized w-100" type="button" data-bs-toggle="modal" data-bs-target="#whatsappModal">WhatsApp</button> -->
                         <!-- Google Form Button -->
-                        <button class="btn btn-primary text-capitalized w-100" type="button" data-bs-toggle="modal" data-bs-target="#formModal">Form</button>
+                        <p class="container justify-content-center">To register to join the association, please fill this Google Form and we will be in touch</p>
+                        <button class="btn btn-primary text-capitalized" type="button" data-bs-toggle="modal" data-bs-target="#formModal">Form</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Email Modal -->
     <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
@@ -39,24 +44,24 @@
         </div>
     </div>
 
-    <!-- WhatsApp Modal -->
-    <div class="modal fade" id="whatsappModal" tabindex="-1" aria-labelledby="whatsappModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="whatsappModalLabel">Contact us on WhatsApp</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Click the button below to contact us on WhatsApp:</p>
-                    <a href="https://wa.me/1234567890" target="_blank" class="btn btn-success">Open WhatsApp</a>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--    &lt;!&ndash; WhatsApp Modal &ndash;&gt;-->
+<!--    <div class="modal fade" id="whatsappModal" tabindex="-1" aria-labelledby="whatsappModalLabel" aria-hidden="true">-->
+<!--        <div class="modal-dialog">-->
+<!--            <div class="modal-content">-->
+<!--                <div class="modal-header">-->
+<!--                    <h5 class="modal-title" id="whatsappModalLabel">Contact us on WhatsApp</h5>-->
+<!--                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+<!--                </div>-->
+<!--                <div class="modal-body">-->
+<!--                    <p>Click the button below to contact us on WhatsApp:</p>-->
+<!--                    <a href="https://wa.me/1234567890" target="_blank" class="btn btn-success">Open WhatsApp</a>-->
+<!--                </div>-->
+<!--                <div class="modal-footer">-->
+<!--                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
     <!-- Google Form Modal -->
     <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
