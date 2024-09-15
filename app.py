@@ -1,12 +1,12 @@
 import flask_bootstrap
 from flask import Flask, render_template, url_for, request
 import smtplib
-from flask_bootstrap import Bootstrap5
+from flask_bootstrap import Bootstrap
 from datetime import datetime
 
 app = Flask(__name__)
 
-bootstrap = Bootstrap5(app)
+bootstrap = Bootstrap(app)
 
 year = datetime.today().year
 
